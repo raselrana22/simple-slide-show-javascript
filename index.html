@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>slide show</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="imageContainer">
+      <!--Main Slide show container-->
+      <!-- Slide show content-->
+      <div class="mySlideShow fade">
+        <div class="imageNumber">1 / 4</div>
+        <img
+          class="image"
+          src="./Photos/img_nature_wide1.jpg"
+          alt="Not Loading"
+        />
+        <div class="imageText">Caption Text One</div>
+      </div>
+
+      <div class="mySlideShow fade">
+        <div class="imageNumber">2 / 4</div>
+        <img
+          class="image"
+          src="./Photos/img_snow_wide2.jpg"
+          alt="Not Loading"
+        />
+        <div class="imageText">Caption Text Two</div>
+      </div>
+
+      <div class="mySlideShow fade">
+        <div class="imageNumber">3 / 4</div>
+        <img
+          class="image"
+          src="./Photos/img_lights_wide3.jpg"
+          alt="Not Loading"
+        />
+        <div class="imageText">Caption Text Three</div>
+      </div>
+
+      <div class="mySlideShow fade">
+        <div class="imageNumber">4 / 4</div>
+        <img
+          class="image"
+          src="./Photos/img_mountains_wide4.jpg"
+          alt="Not Loading"
+        />
+        <div class="imageText">Caption Text Four</div>
+      </div>
+
+      <!-- This is for the next and prev -->
+      <a class="prev" onclick="changeImage(-1)">&#10094;</a>
+      <a class="next" onclick="changeImage(1)">&#10095;</a>
+    </div>
+
+    <!--This is for three dot-->
+
+    <br />
+    <div class="dotContainer">
+      <span class="dot" onclick="currentSlide(1)"></span>
+      <span class="dot" onclick="currentSlide(2)"></span>
+      <span class="dot" onclick="currentSlide(3)"></span>
+      <span class="dot" onclick="currentSlide(4)"></span>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
